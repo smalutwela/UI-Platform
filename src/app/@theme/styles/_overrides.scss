@@ -1,0 +1,23 @@
+@import './themes';
+
+@mixin nb-overrides() {
+  nb-select.size-medium button {
+    padding: 0.4375rem 2.2rem 0.4375rem 1.125rem !important;
+
+    nb-icon {
+      right: 0.41rem !important;
+    }
+  }
+}
+
+.nb-theme-dark nb-layout-header, nb-layout .layout, nb-sidebar, .content nb-layout-footer nav{
+  background-color: #121212 !important;
+}
+
+.nb-theme-dark nb-layout-header nav{
+box-shadow: 0 0.5rem 1rem 0 #161616 !important;
+}
+
+.nb-theme-dark nb-card{
+  background-color: 	#191919 !important;
+}
