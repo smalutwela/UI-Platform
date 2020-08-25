@@ -252,6 +252,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   // },
   {
     title: 'Forum',
-    group: true,
+    // group: true,
+    link: '/pages/forum'
   }
 ];
