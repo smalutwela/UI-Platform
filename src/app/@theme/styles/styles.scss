@@ -35,4 +35,9 @@
 .reference-link{
   padding: 0 0 1em 1em;
   color: #007bff;
+  text-decoration: none !important;
+}
+
+.reference-link:hover{
+  text-decoration: underline !important;
 }
