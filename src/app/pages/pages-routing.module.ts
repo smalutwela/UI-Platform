@@ -6,6 +6,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 
+import { ForumComponent } from './forum/forum.component';
+import { HomeComponent } from './home/home.component';
+
 const routes: Routes = [{
   path: '',
   component: PagesComponent,
@@ -73,6 +76,12 @@ const routes: Routes = [{
       redirectTo: 'charts/chartjs',
       pathMatch: 'full',
     },
+    { path: 'forum', 
+    component: ForumComponent, 
+    },
+    { path: 'forum/home', 
+    component: HomeComponent, 
+    }, 
     {
       path: '**',
       component: NotFoundComponent,
