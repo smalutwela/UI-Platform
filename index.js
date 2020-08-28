@@ -4,7 +4,9 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const config = require('./config/database');
 const path = require('path');
-const authentication = require('./routes/authentication')(router);  
+const authentication = require('./routes/authentication')(router);
+const bodyParser = require('body-parser');
+const cors = require('cors');  
   
 mongoose.Promise = global.Promise;  
 mongoose.connect(config.uri, {useNewUrlParser: true, useUnifiedTopology: true}, (err) => {
@@ -15,6 +17,12 @@ mongoose.connect(config.uri, {useNewUrlParser: true, useUnifiedTopology: true}, 
   }
 } );
 
+app.use(cors({
+  origin: 'http://localhost:4200'
+})); 
+// app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
+app.use(bodyParser.json()); // parse application/json
 app.use(express.static(__dirname + '/dist/'));
 app.use('/authentication', authentication);
 

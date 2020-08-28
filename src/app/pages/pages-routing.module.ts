@@ -8,6 +8,9 @@ import { NotFoundComponent } from './miscellaneous/not-found/not-found.component
 
 import { ForumComponent } from './forum/forum.component';
 import { HomeComponent } from './home/home.component';
+import { PanelComponent } from './panel/panel.component';
+import { RegisterComponent } from './register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [{
   path: '',
@@ -81,7 +84,13 @@ const routes: Routes = [{
     },
     { path: 'forum/home', 
     component: HomeComponent, 
-    }, 
+    },
+    { path: 'forum/dashboard', 
+    component: PanelComponent, 
+    },
+    { path: 'forum/register', 
+    component: RegisterComponent, 
+    },    
     {
       path: '**',
       component: NotFoundComponent,
@@ -90,7 +99,7 @@ const routes: Routes = [{
 }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes), ReactiveFormsModule],
   exports: [RouterModule],
 })
 export class PagesRoutingModule {
