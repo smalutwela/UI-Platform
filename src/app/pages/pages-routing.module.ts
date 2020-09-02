@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AuthGuard } from '../guards/auth.guard';
+import { NotAuthGuard } from '../guards/notAuth.guard';
 
 const routes: Routes = [{
   path: '',
@@ -88,16 +90,20 @@ const routes: Routes = [{
     component: HomeComponent, 
     },
     { path: 'forum/dashboard', 
-    component: PanelComponent, 
+    component: PanelComponent,
+    canActivate: [AuthGuard] 
     },
     { path: 'forum/register', 
-    component: RegisterComponent, 
+    component: RegisterComponent,
+    canActivate: [NotAuthGuard]  
     },
     { path: 'forum/login', 
-    component: LoginComponent, 
+    component: LoginComponent,
+    canActivate: [NotAuthGuard]  
     },
     { path: 'forum/profile', 
-    component: ProfileComponent, 
+    component: ProfileComponent,
+    canActivate: [AuthGuard] 
     },     
     {
       path: '**',

@@ -17,6 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
+import { AuthGuard } from '../guards/auth.guard';
+import { NotAuthGuard } from '../guards/notAuth.guard';
 
 @NgModule({
   imports: [
@@ -40,7 +42,7 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
     LoginComponent,
     ProfileComponent,
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard, NotAuthGuard],
 })
 export class PagesModule {
 }
