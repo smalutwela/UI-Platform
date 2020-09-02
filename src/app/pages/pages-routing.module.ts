@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { PanelComponent } from './panel/panel.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [{
   path: '',
@@ -90,7 +92,13 @@ const routes: Routes = [{
     },
     { path: 'forum/register', 
     component: RegisterComponent, 
-    },    
+    },
+    { path: 'forum/login', 
+    component: LoginComponent, 
+    },
+    { path: 'forum/profile', 
+    component: ProfileComponent, 
+    },     
     {
       path: '**',
       component: NotFoundComponent,

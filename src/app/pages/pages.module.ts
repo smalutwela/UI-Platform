@@ -14,6 +14,9 @@ import { PanelComponent } from './panel/panel.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthService } from '../services/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 @NgModule({
   imports: [
@@ -25,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MiscellaneousModule,
     FormsModule,
     ReactiveFormsModule,
+    FlashMessagesModule.forRoot()
   ],
   declarations: [
     PagesComponent,
@@ -33,6 +37,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     PanelComponent,
     RegisterComponent,
+    LoginComponent,
+    ProfileComponent,
   ],
   providers: [AuthService],
 })

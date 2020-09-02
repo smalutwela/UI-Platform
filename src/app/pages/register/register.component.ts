@@ -10,22 +10,23 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  form: FormGroup;
-  message: any;
-  messageClass: string;
-  processing = false;
-  emailValid: boolean;
-  emailMessage: any;
-  usernameValid: boolean;
-  usernameMessage: any;
-
-  // message;
-  // messageClass;
+  // form: FormGroup;
+  // message: any;
+  // messageClass: string;
   // processing = false;
-  // emailValid;
-  // emailMessage;
-  // usernameValid;
-  // usernameMessage;
+  // emailValid: boolean;
+  // emailMessage: any;
+  // usernameValid: boolean;
+  // usernameMessage: any;
+
+  form: FormGroup;
+  message;
+  messageClass;
+  processing = false;
+  emailValid;
+  emailMessage;
+  usernameValid;
+  usernameMessage;
 
   constructor(
     private formBuilder: FormBuilder,
