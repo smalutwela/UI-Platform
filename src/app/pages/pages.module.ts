@@ -22,6 +22,7 @@ import { AuthGuard } from '../guards/auth.guard';
 import { NotAuthGuard } from '../guards/notAuth.guard';
 import { BlogComponent } from './blog/blog.component';
 import { EditBlogComponent } from './blog/edit-blog/edit-blog.component';
+import { DeleteBlogComponent } from './blog/delete-blog/delete-blog.component';
 
 @NgModule({
   imports: [
@@ -46,6 +47,7 @@ import { EditBlogComponent } from './blog/edit-blog/edit-blog.component';
     ProfileComponent,
     BlogComponent,
     EditBlogComponent,
+    DeleteBlogComponent,
   ],
   providers: [AuthService, AuthGuard, NotAuthGuard, BlogService],
 })

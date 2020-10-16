@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BlogComponent } from './blog/blog.component';
 import { EditBlogComponent } from './blog/edit-blog/edit-blog.component';
+import { DeleteBlogComponent } from './blog/delete-blog/delete-blog.component';
 import { AuthGuard } from '../guards/auth.guard';
 import { NotAuthGuard } from '../guards/notAuth.guard';
 
@@ -114,6 +115,10 @@ const routes: Routes = [{
     },
     { path: 'forum/edit-blog/:id',
     component: EditBlogComponent,
+    canActivate: [AuthGuard] 
+    },
+    { path: 'forum/delete-blog/:id',
+    component: DeleteBlogComponent,
     canActivate: [AuthGuard] 
     },        
     {

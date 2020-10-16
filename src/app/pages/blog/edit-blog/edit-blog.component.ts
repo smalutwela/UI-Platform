@@ -38,7 +38,7 @@ export class EditBlogComponent implements OnInit {
         this.message = data.message; // Set success message
         // After two seconds, navigate back to blog page
         setTimeout(() => {
-          this.router.navigate(['/blog']); // Navigate back to route page
+          this.router.navigate(['/pages/forum/blog']); // Navigate back to route page
         }, 2000);
       }
     });
