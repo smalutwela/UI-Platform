@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { BlogComponent } from './blog/blog.component';
+import { EditBlogComponent } from './blog/edit-blog/edit-blog.component';
 import { AuthGuard } from '../guards/auth.guard';
 import { NotAuthGuard } from '../guards/notAuth.guard';
 
@@ -80,7 +82,8 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'charts/chartjs',
+      // redirectTo: 'charts/chartjs',
+      redirectTo: 'forum',
       pathMatch: 'full',
     },
     { path: 'forum', 
@@ -104,7 +107,15 @@ const routes: Routes = [{
     { path: 'forum/profile', 
     component: ProfileComponent,
     canActivate: [AuthGuard] 
-    },     
+    },
+    { path: 'forum/blog', 
+    component: BlogComponent,
+    canActivate: [AuthGuard] 
+    },
+    { path: 'forum/edit-blog/:id',
+    component: EditBlogComponent,
+    canActivate: [AuthGuard] 
+    },        
     {
       path: '**',
       component: NotFoundComponent,

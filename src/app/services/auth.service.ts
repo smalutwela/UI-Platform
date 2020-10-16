@@ -8,7 +8,7 @@ import { tokenNotExpired } from 'angular2-jwt';
 })
 export class AuthService {
 
-  domain = "http://localhost:8080";
+  domain = "http://localhost:8080/";
   authToken;
   user;
   options;
@@ -33,20 +33,20 @@ export class AuthService {
   }
 
   registerUser(user) {
-    return this.http.post(this.domain + '/authentication/register', user);
+    return this.http.post(this.domain + 'authentication/register', user);
   }
 
   checkUsername(username) {
-    return this.http.get(this.domain + '/authentication/checkUsername/' + username);
+    return this.http.get(this.domain + 'authentication/checkUsername/' + username);
   }
 
   // Function to check if e-mail is taken
   checkEmail(email) {
-    return this.http.get(this.domain + '/authentication/checkEmail/' + email);
+    return this.http.get(this.domain + 'authentication/checkEmail/' + email);
   }
 
   login(user) {
-    return this.http.post(this.domain + '/authentication/login', user);
+    return this.http.post(this.domain + 'authentication/login', user);
   }
 
   logout() {
@@ -65,7 +65,7 @@ export class AuthService {
 
   getProfile() {
     this.createAuthenticationHeaders(); // Create headers before sending to API
-    return this.http.get(this.domain + '/authentication/profile', this.options);
+    return this.http.get(this.domain + 'authentication/profile', this.options);
   }
 
   loggedIn() {

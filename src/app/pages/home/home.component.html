@@ -4,8 +4,9 @@
     <h1>UI Platform Forum</h1>
     <p class="lead">For UI Developers By UI Developers</p>
     <div>
-      <a routerLink = "../forum/register" class="btn register">Register</a>
-      <a routerLink = "../forum/login" class="btn btn-default">Login</a>
+      <a *ngIf = "!authService.loggedIn()" routerLink = "../forum/register" class="btn register">Register</a>
+      <a *ngIf = "!authService.loggedIn()" routerLink = "../forum/login" class="btn btn-default">Login</a>
+      <a *ngIf = "authService.loggedIn()" routerLink = "../forum/blog" class="btn btn-success" style="color:#ffffff;">View Blogs</a>
     </div>
   </div>
   
