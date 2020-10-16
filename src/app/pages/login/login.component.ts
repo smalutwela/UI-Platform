@@ -72,7 +72,7 @@ export class LoginComponent implements OnInit {
           if (this.previousUrl) {
             this.router.navigate([this.previousUrl]); // Redirect to page they were trying to view before
           } else {
-            this.router.navigate(['/pages/forum/profile']); // Navigate to dashboard view
+            this.router.navigate(['/pages/forum/blog']); // Navigate to dashboard view
           }
         }, 2000);
       }

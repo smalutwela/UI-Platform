@@ -11,9 +11,9 @@
         <ul class="nav navbar-nav navbar-right">
           <li *ngIf="authService.loggedIn()" ><a routerLink="/pages/forum/dashboard" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">Dashboard</a></li>
           <li *ngIf="authService.loggedIn()"><a class="nav-list" routerLink = "../forum/profile">Profile</a></li>
-          <li *ngIf="authService.loggedIn()"><a class="nav-list" href="#contact">Blog</a></li>
+          <li *ngIf="authService.loggedIn()"><a class="nav-list" routerLink = "../forum/blog">Blog</a></li>
           <li *ngIf="!authService.loggedIn()"><a class="nav-list" routerLink = "../forum/login">Login</a></li>
-          <li *ngIf="authService.loggedIn()"><a class="nav-list" href="#contact" (click)="onLogoutClick()">Logout</a></li>
+          <li *ngIf="authService.loggedIn()"><a class="nav-list" routerLink = "/pages/forum" (click)="onLogoutClick()">Logout</a></li>
           <li *ngIf="!authService.loggedIn()"><a class="nav-list" routerLink="/pages/forum/register" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" href="#contact">Register</a></li>
         </ul>
       </div>
