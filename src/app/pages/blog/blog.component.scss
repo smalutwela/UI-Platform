@@ -52,8 +52,9 @@
 // }
 
 .blog-body{
-    background-color: #272727;
-    padding: 1em;
+    // background-color: #272727;
+    background-color:#121212 ;
+    padding: 0.5em;
     margin-bottom: 1em;
 }
 
@@ -68,4 +69,35 @@
 
 .btn{
     margin-right: 0.5em;
+}
+
+.list-group-item{
+    // background-color:#272727 !important;
+    background-color:#121212 ;
+    color: #ffffff;
+}
+
+.list-comment{
+    cursor: pointer;
+}
+
+.form-control{
+    // background-color: #272727;
+    background-color:#121212 ;
+    color: #ffffff;
+}
+
+.whole-blog{
+    border: 2px solid gray;
+    // padding: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-heading{
+    background-color: #272727;
+    padding: 0.5em;
+}
+
+.panel-footer{
+    padding: 0.5em;
 }
