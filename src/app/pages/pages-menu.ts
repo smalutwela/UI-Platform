@@ -14,6 +14,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     hidden: true
   },
   {
+    title: 'Forum',
+    // group: true,
+    link: '/pages/forum'
+  },
+  {
     title: 'UI Materials',
     group: true,
   },
@@ -21,7 +26,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Charts',
     // icon: 'pie-chart-outline',
     link: '/pages/charts/chartjs',
-    home: true,
+    // home: true,
     // children: [
     //   {
     //     title: 'Echarts',
@@ -38,33 +43,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
     //   },
     // ],
   },
-  // {
-  //   title: 'Layout',
-  //   icon: 'layout-outline',
-  //   children: [
-  //     {
-  //       title: 'Stepper',
-  //       link: '/pages/layout/stepper',
-  //     },
-  //     {
-  //       title: 'List',
-  //       link: '/pages/layout/list',
-  //     },
-  //     {
-  //       title: 'Infinite List',
-  //       link: '/pages/layout/infinite-list',
-  //     },
-  //     {
-  //       title: 'Accordion',
-  //       link: '/pages/layout/accordion',
-  //     },
-  //     {
-  //       title: 'Tabs',
-  //       pathMatch: 'prefix',
-  //       link: '/pages/layout/tabs',
-  //     },
-  //   ],
-  // },
   {
     title: 'Icons',
     link: '/pages/ui-features/icons',
@@ -72,45 +50,77 @@ export const MENU_ITEMS: NbMenuItem[] = [
     // link: '/pages/ui-features',
   },
   {
+    title: 'Buttons',
+    link: '/pages/forms/buttons',
+    // icon: 'edit-2-outline',
+  },
+  {
+    title: 'Layout',
+    // icon: 'layout-outline',
+    children: [
+      {
+        title: 'Stepper',
+        link: '/pages/layout/stepper',
+      },
+      {
+        title: 'List',
+        link: '/pages/layout/list',
+      },
+      {
+        title: 'Infinite List',
+        link: '/pages/layout/infinite-list',
+      },
+      {
+        title: 'Accordion',
+        link: '/pages/layout/accordion',
+      },
+      {
+        title: 'Tabs',
+        pathMatch: 'prefix',
+        link: '/pages/layout/tabs',
+      },
+    ],
+  },
+  {
     title: 'Bootstrap Buttons',
     link: '/pages/forms/buttons',
     // icon: 'edit-2-outline',
-    // children: [
-    //   {
-    //     title: 'Form Inputs',
-    //     link: '/pages/forms/inputs',
-    //   },
-    //   {
-    //     title: 'Form Layouts',
-    //     link: '/pages/forms/layouts',
-    //   },
-    //   {
-    //     title: 'Datepicker',
-    //     link: '/pages/forms/datepicker',
-    //   },
-    // ],
+    children: [
+      {
+        title: 'Form Inputs',
+        link: '/pages/forms/inputs',
+      },
+      {
+        title: 'Form Layouts',
+        link: '/pages/forms/layouts',
+      },
+      {
+        title: 'Datepicker',
+        link: '/pages/forms/datepicker',
+      },
+    ],
   },
   {
     title: 'Bootsrap Grid',
-    link: '/pages/ui-features/grid'
-    // children: [
-    //   {
-    //     title: 'Grid',
-    //     link: '/pages/ui-features/grid',
-    //   },
-    //   {
-    //     title: 'Icons',
-    //     link: '/pages/ui-features/icons',
-    //   },
-    //   {
-    //     title: 'Typography',
-    //     link: '/pages/ui-features/typography',
-    //   },
-    //   {
-    //     title: 'Animated Searches',
-    //     link: '/pages/ui-features/search-fields',
-    //   },
-    // ],
+    link: '/pages/ui-features/grid',
+    children: [
+      {
+        title: 'Grid',
+        link: '/pages/ui-features/grid',
+      },
+      {
+        title: 'Icons',
+        link: '/pages/ui-features/icons',
+      },
+      {
+        title: 'Typography',
+        link: '/pages/ui-features/typography',
+      },
+      {
+        title: 'Animated Searches',
+        link: '/pages/ui-features/search-fields',
+      },
+    ],
   },
   // {
   //   title: 'Modal & Overlays',
@@ -250,9 +260,4 @@ export const MENU_ITEMS: NbMenuItem[] = [
   //     },
   //   ],
   // },
-  {
-    title: 'Forum',
-    // group: true,
-    link: '/pages/forum'
-  }
 ];
