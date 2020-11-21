@@ -55,6 +55,22 @@ export const MENU_ITEMS: NbMenuItem[] = [
     // icon: 'edit-2-outline',
   },
   {
+    title: 'Cards',
+    link: '/pages/ui-features/cards',
+  },
+  {
+    title: 'Grid',
+    link: '/pages/ui-features/grid',
+  },
+  {
+    title: 'Typography',
+    link: '/pages/ui-features/typography',
+  },
+  {
+    title: 'Animated Searches',
+    link: '/pages/ui-features/search-fields',
+  },
+  {
     title: 'Layout',
     // icon: 'layout-outline',
     children: [
@@ -82,7 +98,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ],
   },
   {
-    title: 'Bootstrap Buttons',
+    title: 'Forms',
     link: '/pages/forms/buttons',
     // icon: 'edit-2-outline',
     children: [
@@ -97,28 +113,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'Datepicker',
         link: '/pages/forms/datepicker',
-      },
-    ],
-  },
-  {
-    title: 'Bootsrap Grid',
-    link: '/pages/ui-features/grid',
-    children: [
-      {
-        title: 'Grid',
-        link: '/pages/ui-features/grid',
-      },
-      {
-        title: 'Icons',
-        link: '/pages/ui-features/icons',
-      },
-      {
-        title: 'Typography',
-        link: '/pages/ui-features/typography',
-      },
-      {
-        title: 'Animated Searches',
-        link: '/pages/ui-features/search-fields',
       },
     ],
   },
