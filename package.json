@@ -4,10 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akveo/ngx-admin.git"
-  },
-  "bugs": {
-    "url": "https://github.com/akveo/ngx-admin/issues"
+    "url": "git+https://github.com/smalutwela/UI-Platform"
   },
   "scripts": {
     "ng": "ng",
@@ -18,7 +15,7 @@
     "test": "ng test",
     "test:coverage": "rimraf coverage && npm run test -- --code-coverage",
     "lint": "ng lint",
-    "lint:fix": "ng lint ngx-admin-demo --fix",
+    "lint:fix": "ng lint UI-Platform --fix",
     "lint:styles": "stylelint ./src/**/*.scss",
     "lint:ci": "npm run lint && npm run lint:styles",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
@@ -38,6 +35,7 @@
     "@angular/core": "^9.1.12",
     "@angular/forms": "^9.1.12",
     "@angular/google-maps": "^9.2.4",
+    "@angular/material": "^9.2.4",
     "@angular/platform-browser": "^9.1.12",
     "@angular/platform-browser-dynamic": "^9.1.12",
     "@angular/router": "^9.1.12",
@@ -118,7 +116,7 @@
     "typescript": "3.7.5"
   },
   "description": "\"# UI-Platform\"",
-  "homepage": "https://github.com/akveo/ngx-admin#readme",
+  "homepage": "https://github.com/smalutwela/UI-Platform",
   "main": "index.js",
   "author": "smalutwela"
 }

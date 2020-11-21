@@ -1,0 +1,22 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+    .example-card {
+        max-width: 400px;
+        margin-top: 10px;
+        margin-left: 1.5em;
+        font-weight: bold;
+      }
+      
+      .example-header-image {
+        background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+        background-size: cover;
+      }
+
+      .nebular-card-body{
+        background-color:#333333;
+      }
+      .nebular-card-body a{
+        float:right;
+      }
+}
